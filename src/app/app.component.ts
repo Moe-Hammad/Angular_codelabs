@@ -17,7 +17,7 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
     </section> -->
     </main>`,
   styleUrls: ['./app.component.css'],
-  imports: [HomeComponent, HousingLocationComponent],
+  imports: [HomeComponent],
 })
 
 export class AppComponent {
