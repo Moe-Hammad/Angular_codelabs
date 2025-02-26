@@ -12,9 +12,9 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
     <section class="content">
       <app-home></app-home>
     </section>
-    <section class="results">
+    <!-- <section class="results">
       <app-housing-location></app-housing-location>
-    </section>
+    </section> -->
     </main>`,
   styleUrls: ['./app.component.css'],
   imports: [HomeComponent, HousingLocationComponent],
