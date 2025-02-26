@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from "./home/home.component";
-import { HousingLocationComponent } from './housing-location/housing-location.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -10,14 +10,11 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
       <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
     </header>
     <section class="content">
-      <app-home></app-home>
+      <router-outlet></router-outlet>
     </section>
-    <!-- <section class="results">
-      <app-housing-location></app-housing-location>
-    </section> -->
     </main>`,
   styleUrls: ['./app.component.css'],
-  imports: [HomeComponent],
+  imports: [HomeComponent, RouterModule],
 })
 
 export class AppComponent {
